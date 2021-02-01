@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
 import Footer from "./Footer";
@@ -102,7 +102,6 @@ const Navbar = () => {
   );
   return (
     <>
-    <Router>
       <Box component="nav">
         <AppBar position="static" style={{ background: "#222" }}>
           <Toolbar>
@@ -125,7 +124,6 @@ const Navbar = () => {
           </Toolbar>
         </AppBar>
       </Box>
-      </Router>
     </>
   );
 };
