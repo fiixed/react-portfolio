@@ -110,7 +110,7 @@ const Resume = () => {
       <Navbar />
       <Box component="header" className={classes.mainContainer}>
         <Typography variant="h4" align="center" className={classes.heading}>
-          working experience
+          work experience
         </Typography>
         <Box component="div" className={classes.timeLine}>
           <Typography
@@ -139,9 +139,13 @@ const Resume = () => {
               aligh="center"
               style={{ color: "tan" }}
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
-              officiis? Veritatis dolore eum eos sequi iste iure possimus ad
-              quos.
+              Architect and develop Mobile/XR projects lasting 5-12 months
+● Serve as pre-sales customer facing technical advisor for Mobile and XR opportunities
+● Served as mobile team delivery center manager with accountability for entire mobile team; mentored and trained
+developers and built team culture around continuous improvement and cross-functional partnership
+● Technical project manager on various Mobile development projects
+● Recruited for and managed the ACE graduate program to train and develop the next generation of technical staff
+and developers.
             </Typography>
           </Box>
           <Typography
@@ -170,9 +174,8 @@ const Resume = () => {
               aligh="center"
               style={{ color: "tan" }}
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
-              officiis? Veritatis dolore eum eos sequi iste iure possimus ad
-              quos.
+              Served as Mobile Dev Team Lead in Austin Delivery Center
+● Developer on various Mobile App projects using a variety of mobile development platforms (both hybrid and native)
             </Typography>
           </Box>
           <Typography
@@ -201,16 +204,15 @@ const Resume = () => {
               aligh="center"
               style={{ color: "tan" }}
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
-              officiis? Veritatis dolore eum eos sequi iste iure possimus ad
-              quos.
+              Served as member of cross-functional development teams during end-to-end Android development projects.
+● Assumed project leadership roles during development lifecycles; architected and developed multiple apps.
             </Typography>
           </Box>
           <Typography
             variant="h2"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            2017
+            2012 - 2013
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
@@ -218,30 +220,28 @@ const Resume = () => {
               aligh="center"
               className={classes.subHeading}
             >
-              react | redux
+              mobile applications developer
             </Typography>
             <Typography
               variant="body1"
               aligh="center"
               style={{ color: "tomato" }}
             >
-              company name where worked
+              Care Connect, Melbourne Australia
             </Typography>
             <Typography
               variant="subtitle1"
               aligh="center"
               style={{ color: "tan" }}
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
-              officiis? Veritatis dolore eum eos sequi iste iure possimus ad
-              quos.
+              Worked on various internal mobile and database development projects as the business required.
             </Typography>
           </Box>
           <Typography
             variant="h2"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            2018-2020
+            2005-2012
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
@@ -249,23 +249,25 @@ const Resume = () => {
               aligh="center"
               className={classes.subHeading}
             >
-              mern stack
+              IT Manager/Systems & Network Admin
             </Typography>
             <Typography
               variant="body1"
               aligh="center"
               style={{ color: "tomato" }}
             >
-              company name where worked
+              Care Connect, Melbourne Australia
             </Typography>
             <Typography
               variant="subtitle1"
               aligh="center"
               style={{ color: "tan" }}
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
-              officiis? Veritatis dolore eum eos sequi iste iure possimus ad
-              quos.
+              Management of all Care Connect IT infrastucture
+● Management of the internal Care Connect Help Desk Team
+● Windows and Linux Systems Admin
+● Network Admin
+● Project Management
             </Typography>
           </Box>
         </Box>
