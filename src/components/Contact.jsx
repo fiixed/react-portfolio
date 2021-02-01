@@ -1,4 +1,6 @@
+
 import React, { useState } from 'react'
+import env from "react-dotenv";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
@@ -61,7 +63,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_upova4f', 'template_w76j9ds', e.target, 'user_jXIFzbUsKA2cAromCMPtJ')
+        emailjs.sendForm(env.YOUR_SERVICE_ID, env.YOUR_TEMPLATE_ID, e.target, env.YOUR_USER_ID)
           .then((result) => {
               console.log(result.text);
               result.text ==="OK" ? console.log("it worked") : alert("didnt work")
