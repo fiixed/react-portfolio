@@ -58,7 +58,7 @@ const Header = () => {
                     'MERN Stack',
                     'Mobile Development',
                     ]}
-                    typeSpeed={40}
+                    typeSpeed={30}
                     backSpeed={60}
                     cursorChar='_'
                     loop />

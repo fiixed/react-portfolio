@@ -1,7 +1,10 @@
-import React from 'react'
+
+import React, { useState } from 'react'
+import env from "react-dotenv";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
+import emailjs from 'emailjs-com';
 import Navbar from "./Navbar";
 
 const useStyles = makeStyles((theme) => ({
@@ -42,56 +45,102 @@ const InputField = withStyles({
 
 const Contact = () => {
     const classes = useStyles();
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [buttonText, setButtonText] = useState('contact me');
+
+    const handleChange = (event) => {
+        event.target.name === "name" 
+        ? setName(event.target.value)
+        : event.target.name === "email" 
+        ? setEmail(event.target.value)
+        : event.target.name === "message" 
+        ? setMessage(event.target.value)
+        : console.log("error")
+      };
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm(env.YOUR_SERVICE_ID, env.YOUR_TEMPLATE_ID, e.target, env.YOUR_USER_ID)
+          .then((result) => {
+              console.log(result.text);
+              result.text ==="OK" ? console.log("it worked") : alert("didnt work")
+                setName("")
+                setEmail("")
+                setMessage("")
+                setButtonText('sent')
+          }, (error) => {
+              console.log(error.text);
+          });
+      }
     return (
         <Box component="div" style={{ background: "#233", height: "100vh" }}>
       <Navbar />
       <Grid container justify="center">
-        <Box component="form" className={classes.form}>
+        <Box component="form" className={classes.form} onSubmit={sendEmail}>
           <Typography
             variant="h5"
             style={{
               color: "tomato",
               textAlign: "center",
-              textTransform: "uppercase",
+              
             }}
           >
-            hire or contact me...
+            Contact me to hire or if you are just nosy....
           </Typography>
+          
           <InputField
+            id="name"
+            name="name"
             fullWidth={true}
             label="Name"
             variant="outlined"
             inputProps={{ style: { color: "white" } }}
             margin="dense"
             size="medium"
+            onChange={(e) => handleChange(e)}
+            value={name}
           />
           <br />
 
           <InputField
+            id="email"
+            name="email"
             fullWidth={true}
             label="Email"
             variant="outlined"
             inputProps={{ style: { color: "white" } }}
             margin="dense"
             size="medium"
+            onChange={(e) => handleChange(e)}
+            value={email}
           />
           <br />
           <InputField
+            id="message"
+            name="message"
             fullWidth={true}
-            label="Company name"
+            label="Message"
             variant="outlined"
             inputProps={{ style: { color: "white" } }}
             margin="dense"
             size="medium"
+            multiline
+            rows={4}
+            onChange={(e) => handleChange(e)}
+            value={message}
           />
           <br />
           <Button
+            type="submit"
             className={classes.button}
             variant="outlined"
             fullWidth={true}
             endIcon={<SendIcon />}
           >
-            contact me
+            {buttonText}
           </Button>
         </Box>
       </Grid>
