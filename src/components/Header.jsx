@@ -8,13 +8,13 @@ import {
 
 } from '@material-ui/core'
 import Typed from 'react-typed'
-import avatar from '../images/avatar.png'
+import avatar from '../images/me.jpg'
 
 // CSS STYLES
 const useStyles = makeStyles(theme => ({
     avatar: {
-      width: theme.spacing(15),
-      height: theme.spacing(15),
+      width: theme.spacing(25),
+      height: theme.spacing(25),
       margin: theme.spacing(1)
     },
     title: {
@@ -54,7 +54,10 @@ const Header = () => {
                 strings={[
                     'Full Stack Development',
                     'MERN Stack',
-                    'Mobile Development']}
+                    'Mobile Development',
+                    'Pugs',
+                    'Cricket', 
+                    'Travel']}
                     typeSpeed={40}
                     backSpeed={60}
                     loop />

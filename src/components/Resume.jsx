@@ -117,6 +117,68 @@ const Resume = () => {
             variant="h2"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
+            2015 - Now
+          </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography
+              variant="h5"
+              aligh="center"
+              className={classes.subHeading}
+            >
+              software architect / technical project manager
+            </Typography>
+            <Typography
+              variant="body1"
+              aligh="center"
+              style={{ color: "tomato" }}
+            >
+              Sirius, Austin TX
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              aligh="center"
+              style={{ color: "tan" }}
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
+              officiis? Veritatis dolore eum eos sequi iste iure possimus ad
+              quos.
+            </Typography>
+          </Box>
+          <Typography
+            variant="h2"
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+          >
+            2013 - 2015
+          </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography
+              variant="h5"
+              aligh="center"
+              className={classes.subHeading}
+            >
+              Consultant - Mobile
+            </Typography>
+            <Typography
+              variant="body1"
+              aligh="center"
+              style={{ color: "tomato" }}
+            >
+              Sirius, Austin TX
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              aligh="center"
+              style={{ color: "tan" }}
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
+              officiis? Veritatis dolore eum eos sequi iste iure possimus ad
+              quos.
+            </Typography>
+          </Box>
+          <Typography
+            variant="h2"
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+          >
             2013
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
@@ -125,76 +187,14 @@ const Resume = () => {
               aligh="center"
               className={classes.subHeading}
             >
-              web design
+              Android Developer
             </Typography>
             <Typography
               variant="body1"
               aligh="center"
               style={{ color: "tomato" }}
             >
-              company name where worked
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              aligh="center"
-              style={{ color: "tan" }}
-            >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
-              officiis? Veritatis dolore eum eos sequi iste iure possimus ad
-              quos.
-            </Typography>
-          </Box>
-          <Typography
-            variant="h2"
-            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-          >
-            2014
-          </Typography>
-          <Box component="div" className={classes.timeLineItem}>
-            <Typography
-              variant="h5"
-              aligh="center"
-              className={classes.subHeading}
-            >
-              html & css
-            </Typography>
-            <Typography
-              variant="body1"
-              aligh="center"
-              style={{ color: "tomato" }}
-            >
-              company name where worked
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              aligh="center"
-              style={{ color: "tan" }}
-            >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non,
-              officiis? Veritatis dolore eum eos sequi iste iure possimus ad
-              quos.
-            </Typography>
-          </Box>
-          <Typography
-            variant="h2"
-            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-          >
-            2015
-          </Typography>
-          <Box component="div" className={classes.timeLineItem}>
-            <Typography
-              variant="h5"
-              aligh="center"
-              className={classes.subHeading}
-            >
-              javascript full stack
-            </Typography>
-            <Typography
-              variant="body1"
-              aligh="center"
-              style={{ color: "tomato" }}
-            >
-              company name where worked
+              WME, Melbourne Australia
             </Typography>
             <Typography
               variant="subtitle1"
