@@ -29,11 +29,17 @@ const Footer = () => {
         className={classes.root}
         style={{ padding: 0 }}
         icon={<LinkedIn />}
+        target='_blank'
+        href='https://www.linkedin.com/in/andrewrbell/'
+        rel='noreferrer'
       />
       <BottomNavigationAction
         className={classes.root}
         style={{ padding: 0 }}
         icon={<GitHub />}
+        target='_blank'
+        href='https://github.com/fiixed'
+        rel='noreferrer'
       />
     </BottomNavigation>
   );
