@@ -14,8 +14,10 @@ import {
   } from "@material-ui/core";
 import project1 from "../images/html-css-javascript-lg.jpg";
 import project2 from "../images/javascript-fullstack.jpg";
-import project3 from "../images/react-redux.jpg";
+import redux from "../images/react-redux.jpg";
 import project4 from "../images/mern-stack.jpg";
+import hooks from '../images/react-hooks.png';
+import beer from '../images/beer.png';
 
 const useStyles = makeStyles({
     mainContainer: {
@@ -42,26 +44,33 @@ const Projects = () => {
                 component="img"
                 alt="Project 1"
                 height="140"
-                image={project1}
+                image={hooks}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 1
+                  This Portfolio!
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officia architecto natus ipsa dignissimos porro rem neque,
-                  repudiandae libero sapiente iste perferendis quidem quae
-                  numquam ducimus pariatur voluptatem ex! A, laboriosam!
+                  This Portfolio site was built from scratch using React, Hooks, Material UI, Particles JS, Email JS and Typed JS  
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                Share
+              <Button 
+              size="small" 
+              color="primary"
+              target='_blank'
+              href='https://github.com/fiixed/react-portfolio'
+              rel='noreferrer'>
+                GitHub
               </Button>
-              <Button size="small" color="primary">
-                Live Demo
+              <Button 
+              size="small" 
+              color="primary"
+              target='_blank'
+              href='https://andrew-bell-react-portfolio.web.app/'
+              rel='noreferrer'>
+                Live Link
               </Button>
             </CardActions>
           </Card>
@@ -74,26 +83,33 @@ const Projects = () => {
                 component="img"
                 alt="Project 2"
                 height="140"
-                image={project2}
+                image={hooks}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 2
+                  React Hooks Tac Toe
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officia architecto natus ipsa dignissimos porro rem neque,
-                  repudiandae libero sapiente iste perferendis quidem quae
-                  numquam ducimus pariatur voluptatem ex! A, laboriosam!
+                  As a mini project to highlight my React skills I built two versions of the same tic tac toe game, one using React & Hooks, and another using React & Redux for state management
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                Share
+            <Button 
+              size="small" 
+              color="primary"
+              target='_blank'
+              href='https://github.com/fiixed/react-hooks-tac-toe'
+              rel='noreferrer'>
+                GitHub
               </Button>
-              <Button size="small" color="primary">
-                Live Demo
+              <Button 
+              size="small" 
+              color="primary"
+              target='_blank'
+              href='https://react-hooks-tac-toe.web.app/'
+              rel='noreferrer'>
+                Live Link
               </Button>
             </CardActions>
           </Card>
@@ -106,26 +122,33 @@ const Projects = () => {
                 component="img"
                 alt="Project 3"
                 height="140"
-                image={project3}
+                image={redux}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 3
+                React Hooks Tac Toe
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officia architecto natus ipsa dignissimos porro rem neque,
-                  repudiandae libero sapiente iste perferendis quidem quae
-                  numquam ducimus pariatur voluptatem ex! A, laboriosam!
+                As a mini project to highlight my React skills I built two versions of the same tic tac toe game, one using React & Hooks, and another using React & Redux for state management
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                Share
+            <Button 
+              size="small" 
+              color="primary"
+              target='_blank'
+              href='https://github.com/fiixed/react-redux-tac-toe'
+              rel='noreferrer'>
+                GitHub
               </Button>
-              <Button size="small" color="primary">
-                Live Demo
+              <Button 
+              size="small" 
+              color="primary"
+              target='_blank'
+              href='https://react-redux-tac-toe-9.web.app/'
+              rel='noreferrer'>
+                Live Link
               </Button>
             </CardActions>
           </Card>
@@ -138,26 +161,33 @@ const Projects = () => {
                 component="img"
                 alt="Project 4"
                 height="140"
-                image={project4}
+                image={beer}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project 4
+                  Get Your Beer On
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officia architecto natus ipsa dignissimos porro rem neque,
-                  repudiandae libero sapiente iste perferendis quidem quae
-                  numquam ducimus pariatur voluptatem ex! A, laboriosam!
+                  The challenge given here was to build a front-end project using only HMTL, CSS and JS.  Get Your Beer On is a web application for users looking for their next favorite brewery or beer.  Leverages Open Brewery DB, Open Beer Database, Google Geocoding API and the Google Maps JS API.  Contact me to be IP whitelisted to view the map components of this app.  
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                Share
+            <Button 
+              size="small" 
+              color="primary"
+              target='_blank'
+              href='https://github.com/fiixed/Get-Your-Beer-On'
+              rel='noreferrer'>
+                GitHub
               </Button>
-              <Button size="small" color="primary">
-                Live Demo
+              <Button 
+              size="small" 
+              color="primary"
+              target='_blank'
+              href='https://get-your-beer-on.herokuapp.com/'
+              rel='noreferrer'>
+                Live Link
               </Button>
             </CardActions>
           </Card>
