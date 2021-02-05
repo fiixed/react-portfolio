@@ -15,6 +15,7 @@ import {
   List,
   Typography,
   Box,
+  MenuItem,
 } from "@material-ui/core";
 import {
   ArrowBack,
@@ -22,6 +23,7 @@ import {
   AssignmentInd,
   Home,
   Apps,
+  Menu,
   ContactMail,
 } from "@material-ui/icons";
 import avatar from "../images/me.jpg";
@@ -42,6 +44,11 @@ const useStyles = makeStyles((theme) => ({
   listItem: {
     color: "tan",
   },
+  toolBar: {
+    display:"flex",
+    justifyContent: "space-between",
+    alignItems: "center"
+  }
 }));
 
 const menuItems = [
@@ -105,15 +112,23 @@ const Navbar = () => {
     <>
       <Box component="nav">
         <AppBar position="static" style={{ background: "#222" }}>
-          <Toolbar>
+          <Toolbar className={classes.toolBar}>
+          <div>
+          <MenuItem edge="start">
             <Typography variant="h5" style={{ color: "tan" }} >
               <Link to="/" style={{ color: "tan", textDecoration: "none" }} >
-                Portfolio
+                Home
               </Link>
             </Typography>
+            </MenuItem>
+            </div>
+            <div>
+            <MenuItem>
             <IconButton edge="end" onClick={toggleSlider("right", true)}>
-              <ArrowForward style={{ color: "tomato" }} />
+              <Menu style={{ color: "tomato" }} />
             </IconButton>
+            </MenuItem>
+            </div>
             <Drawer
               anchor="right"
               open={state.right}
