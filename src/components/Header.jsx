@@ -75,6 +75,17 @@ const Header = () => {
                     loop />
                 
             </Typography>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Typography className={classes.title} variant="h6">
+                <Typed
+                    strings={['JavaScript, Node, React, Hooks, Redux, React Native, Express, EJS, REST, MongoDB, Mongoose, SQL, Firebase, Heroku, Flutter, Dart, HTML, CSS, Bootstrap, Flexbox, Unity, C#, AR/VR, Android, Java, iOS, Swift']}
+                    typeSpeed={40}
+                    cursorChar='_'
+                />
+                </Typography>
         </Box>
     )
 }
