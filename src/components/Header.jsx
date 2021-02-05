@@ -71,7 +71,7 @@ const Header = () => {
                     'Pugs!',
                     'Cricket', 
                     'Travel']}
-                    typeSpeed={40}
+                    typeSpeed={30}
                     backSpeed={60}
                     cursorChar='_'
                     loop />
