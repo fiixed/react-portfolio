@@ -63,7 +63,7 @@ const Header = () => {
                 <Typed
                 strings={[
                     'Full Stack Developer (MERN)',
-                    'Mobile Developer (Hybrid & Native)',
+                    'Mobile Developer (Hybrid + Native)',
                     'Technical PM'
                     ]}
                     typeSpeed={80}
