@@ -43,6 +43,7 @@ const Header = () => {
             <Grid container justify="center">
                 <Avatar className={classes.avatar} src={avatar} alt="Andrew Bell" />
             </Grid>
+           
             <Typography className={classes.title} variant="h3">
                 <Typed
                     strings={['Andrew Bell']}
@@ -76,7 +77,7 @@ const Header = () => {
                     loop />
                 
             </Typography>
-            <br/>
+            
           
             
             <Typography className={classes.title} variant="h6">
