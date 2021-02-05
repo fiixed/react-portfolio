@@ -85,7 +85,7 @@ const Header = () => {
                 <Typed
                 strings={[
                     'Pugs! (ask me about George and Queenie)',
-                    'Travel! (I\'ve been almost all over the world)',
+                    'Travel! (\"been around the world and ay yi yi...\")',
                     'Cricket! (the sport, I\'m Australian...)'
                     ]}
                     typeSpeed={80}
