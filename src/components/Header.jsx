@@ -24,9 +24,12 @@ const useStyles = makeStyles(theme => ({
       color: "tan",
       marginBottom: "3rem"
     },
+    skills: {
+      color: "#EF3100",
+    },
     typedContainer: {
       position: "absolute",
-      top: "50%",
+      top: "55%",
       left: "50%",
       transform: "translate(-50%, -50%)",
       width: "100vw",
@@ -80,7 +83,7 @@ const Header = () => {
             
           
             
-            <Typography className={classes.title} variant="h6">
+            <Typography className={classes.skills} variant="h6">
                 <Typed
                     strings={['JavaScript, Node, React, Hooks, Redux, React Native, Express, EJS, REST, MongoDB, Mongoose, SQL, Firebase, Heroku, Flutter, Dart, HTML, CSS, Bootstrap, Flexbox, Unity, C#, AR/VR, Android, Java, iOS, Swift']}
                     typeSpeed={40}
