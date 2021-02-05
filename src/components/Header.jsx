@@ -59,9 +59,9 @@ const Header = () => {
                 <Typography className={classes.subtitle} variant="h4">
                 <Typed
                 strings={[
-                    'Full Stack Development',
-                    'MERN Stack',
-                    'Mobile Development',
+                    'Full Stack Developer (MERN)',
+                    'Mobile Developer (Hybrid & Native)',
+                    'Technical PM'
                     ]}
                     typeSpeed={80}
                     backSpeed={60}
