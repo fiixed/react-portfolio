@@ -18,6 +18,7 @@ import {
 } from "@material-ui/core";
 import {
   ArrowBack,
+  ArrowForward,
   AssignmentInd,
   Home,
   Apps,
@@ -105,14 +106,14 @@ const Navbar = () => {
       <Box component="nav">
         <AppBar position="static" style={{ background: "#222" }}>
           <Toolbar>
-            <IconButton edge="start" onClick={toggleSlider("right", true)}>
-              <ArrowBack style={{ color: "tomato" }} />
-            </IconButton>
-            <Typography variant="h5" style={{ color: "tan" }}>
-              <Link to="/" style={{ color: "tan", textDecoration: "none" }}>
+            <Typography variant="h5" style={{ color: "tan" }} >
+              <Link to="/" style={{ color: "tan", textDecoration: "none" }} >
                 Portfolio
               </Link>
             </Typography>
+            <IconButton edge="end" onClick={toggleSlider("right", true)}>
+              <ArrowForward style={{ color: "tomato" }} />
+            </IconButton>
             <Drawer
               anchor="right"
               open={state.right}
