@@ -18,7 +18,8 @@ const useStyles = makeStyles(theme => ({
       margin: theme.spacing(1)
     },
     title: {
-      color: "tomato"
+      color: "tomato",
+      marginTop: "2rem",
     },
     subtitle: {
       color: "tan",
@@ -46,8 +47,9 @@ const Header = () => {
             <Grid container justify="center">
                 <Avatar className={classes.avatar} src={avatar} alt="Andrew Bell" />
             </Grid>
+            
            
-            <Typography className={classes.title} variant="h3">
+            <Typography className={classes.title} variant="h2">
                 <Typed
                     strings={['Andrew Bell']}
                     typeSpeed={40}
@@ -68,20 +70,6 @@ const Header = () => {
                     cursorChar='_'
                     loop />
             </Typography>
-            <Typography className={classes.subtitle} variant="h5">
-                <Typed
-                strings={[
-                    'Pugs!',
-                    'Cricket', 
-                    'Travel']}
-                    typeSpeed={80}
-                    backSpeed={60}
-                    cursorChar='_'
-                    loop />
-                
-            </Typography>
-            
-          
             
             <Typography className={classes.skills} variant="h6">
                 <Typed
@@ -90,6 +78,23 @@ const Header = () => {
                     cursorChar='_'
                 />
                 </Typography>
+                <br />
+                <br />
+                <br />
+                <Typography className={classes.subtitle} variant="h5">
+                <Typed
+                strings={[
+                    'Pugs!',
+                    'Cricket!', 
+                    'Travel!']}
+                    typeSpeed={80}
+                    backSpeed={60}
+                    cursorChar='_'
+                    loop />
+                
+            </Typography>
+            
+
         </Box>
     )
 }
