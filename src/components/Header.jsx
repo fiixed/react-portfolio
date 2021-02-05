@@ -84,9 +84,10 @@ const Header = () => {
                 <Typography className={classes.subtitle} variant="h5">
                 <Typed
                 strings={[
-                    'Pugs!',
-                    'Cricket!', 
-                    'Travel!']}
+                    'Pugs! (ask me about George and Queenie)',
+                    'Travel! (I\'ve been almost all over the world)',
+                    'Cricket! (the sport, I\'m Australian...)'
+                    ]}
                     typeSpeed={80}
                     backSpeed={60}
                     cursorChar='_'
