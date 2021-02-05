@@ -63,7 +63,7 @@ const Header = () => {
                     'MERN Stack',
                     'Mobile Development',
                     ]}
-                    typeSpeed={30}
+                    typeSpeed={80}
                     backSpeed={60}
                     cursorChar='_'
                     loop />
@@ -74,7 +74,7 @@ const Header = () => {
                     'Pugs!',
                     'Cricket', 
                     'Travel']}
-                    typeSpeed={30}
+                    typeSpeed={80}
                     backSpeed={60}
                     cursorChar='_'
                     loop />
