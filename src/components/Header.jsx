@@ -31,7 +31,8 @@ const useStyles = makeStyles(theme => ({
       transform: "translate(-50%, -50%)",
       width: "100vw",
       textAlign: "center",
-      zIndex: 1
+      zIndex: 1,
+      padding: "1%"
     }
   }));
 
@@ -76,9 +77,8 @@ const Header = () => {
                 
             </Typography>
             <br/>
-            <br/>
-            <br/>
-            <br/>
+          
+            
             <Typography className={classes.title} variant="h6">
                 <Typed
                     strings={['JavaScript, Node, React, Hooks, Redux, React Native, Express, EJS, REST, MongoDB, Mongoose, SQL, Firebase, Heroku, Flutter, Dart, HTML, CSS, Bootstrap, Flexbox, Unity, C#, AR/VR, Android, Java, iOS, Swift']}
