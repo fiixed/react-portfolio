@@ -58,6 +58,7 @@ const Header = () => {
                 </Typography>
                 <br/>
                 <br/>
+                <br/>
                 <Typography className={classes.subtitle} variant="h4">
                 <Typed
                 strings={[
