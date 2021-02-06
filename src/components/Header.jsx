@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
 const Header = () => {
     const classes = useStyles();
     return (
-        <Box className={classes.typedContainer}>
+        <Box className={classes.typedContainer} style={{ maxWidth: 1000}}>
             <Grid container justify="center">
                 <Avatar className={classes.avatar} src={avatar} alt="Andrew Bell" />
             </Grid>
@@ -62,17 +62,16 @@ const Header = () => {
                 <Typography className={classes.subtitle} variant="h4">
                 <Typed
                 strings={[
-                    'Full Stack Developer (MERN)',
-                    'Mobile Developer (Hybrid + Native)',
-                    'Technical PM'
+                    'Full Stack Developer (MERN), Mobile Developer (Hybrid + Native), Technical PM'
                     ]}
                     typeSpeed={80}
                     backSpeed={60}
                     cursorChar='_'
-                    loop />
+                    
+                    />
             </Typography>
             
-            <Typography className={classes.skills} variant="h6">
+            <Typography className={classes.skills} variant="h6"  >
                 <Typed
                     strings={['JavaScript, Node, React, Hooks, Redux, React Native, Express, EJS, REST, MongoDB, Mongoose, SQL, Firebase, Heroku, Flutter, Dart, HTML, CSS, Bootstrap, Flexbox, Unity, C#, AR/VR, Android, Java, iOS, Swift']}
                     typeSpeed={40}
