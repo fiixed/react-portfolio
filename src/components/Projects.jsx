@@ -36,6 +36,55 @@ const Projects = () => {
         <Box component="div" className={classes.mainContainer}>
       <Navbar />
       <Grid container justify="center">
+      {/* Capstone */}
+      <Grid item xs={12} sm={8} md={6}>
+          <Card className={classes.cardContainer}>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt="Capstone"
+                height="140"
+                image={hooks}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Full Stack Ecommerce with Stripe
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                E-commerce admin ability to manage categories, sub-categories, products, images, ratings, orders, coupons.  User ability to search and filter products, add to cart, payment, pdf invoice.
+                Capstone project built with React, Redux, Ant, Node, Express, Firebase and MongoDB
+  
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button 
+              size="small" 
+              color="primary"
+              target='_blank'
+              href='https://github.com/fiixed/react-whitelabel-ecommerce-front'
+              rel='noreferrer'>
+                GitHub Frontend
+              </Button>
+              <Button 
+              size="small" 
+              color="primary"
+              target='_blank'
+              href='https://github.com/fiixed/react-whitelabel-ecommerce-back'
+              rel='noreferrer'>
+                GitHub Backend
+              </Button>
+              {/* <Button 
+              size="small" 
+              color="primary"
+              target='_blank'
+              href='https://andrew-bell-react-portfolio.web.app/'
+              rel='noreferrer'>
+                Live Link 
+              </Button> */}
+            </CardActions>
+          </Card>
+        </Grid>
         {/* Project 1 */}
         <Grid item xs={12} sm={8} md={6}>
           <Card className={classes.cardContainer}>
